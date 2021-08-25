@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Movie from './Movie';
+import "./App.css";
 
 class App extends React.Component {
   state = {
@@ -24,22 +25,29 @@ class App extends React.Component {
   render() {
     const { isLoading, movies } = this.state;
     return (
-      <div>
-        {isLoading
-          ? "Loading.."
-          : movies.map(movie => (
-            // object를 풀어줄때 map 함수 사용, jsx에서는 props를 통해서 값을 전달한다.
-            // key는 표현되지 않지만 필수 props
-            <Movie
-              key={movie.id}
-              id={movie.id}
-              year={movie.year}
-              title={movie.title}
-              summary={movie.summary}
-              poster={movie.medium_cover_image}
-            />
-          ))}
-      </div>
+      <section class="container">
+        {isLoading ? (
+          <div class="loader">
+            <span class="loader__text">Loading ...</span>
+
+          </div>
+        ) : (
+          // object를 풀어줄때 map 함수 사용, jsx에서는 props를 통해서 값을 전달한다.
+          // key는 표현되지 않지만 필수 props
+          <div class="movies">
+            {movies.map(movie => (
+              <Movie
+                key={movie.id}
+                id={movie.id}
+                year={movie.year}
+                title={movie.title}
+                summary={movie.summary}
+                poster={movie.medium_cover_image}
+              />
+            ))}
+          </div>
+        )}
+      </section>
     );
   }
 
