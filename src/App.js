@@ -6,17 +6,17 @@ class App extends React.Component {
     count: 0
   };
   add = () => {
-    console.log("add")
+    this.setState({ count: this.state.count + 1 });
   };
   minus = () => {
-    console.log("minus")
+    this.setState({ count: this.state.count - 1 });
   };
   render() {
     return (
       <div>
         <h1>The number is {this.state.count}</h1>
-        <button onClick={this.add()}>Add</button>
-        <button onClick={this.minus()}>Minus</button>
+        <button onClick={this.add}>Add</button>
+        <button onClick={this.minus}>Minus</button>
       </div>);
   }
 }
@@ -40,4 +40,7 @@ map : function을 취해서 그 function을 array의 각 item 에 적용
 prop-types : 내가 전달 받은 props가 내가 원하는 props 인지 확인
 react 는 자동적으로 class component의 render method를 실행
 component의 data를 바꾸기 위해 이 작업 실행
+
+매번 state 의 상태를 변경할때마다 react는 render function을 호출해서 바꿔주길 원함
+state는 object. setState는 새로운 state와 함께 render function호출
 */
