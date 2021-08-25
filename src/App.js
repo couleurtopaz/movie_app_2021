@@ -43,4 +43,7 @@ component의 data를 바꾸기 위해 이 작업 실행
 
 매번 state 의 상태를 변경할때마다 react는 render function을 호출해서 바꿔주길 원함
 state는 object. setState는 새로운 state와 함께 render function호출
+
+setState를 호출하면, component를 호출하고 먼저 render를 호출한 다음 업데이트가 완료되었다고
+말하면 componentDidUpdate 실행
 */
