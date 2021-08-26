@@ -25,16 +25,16 @@ class App extends React.Component {
   render() {
     const { isLoading, movies } = this.state;
     return (
-      <section class="container">
+      <section className="container">
         {isLoading ? (
-          <div class="loader">
-            <span class="loader__text">Loading ...</span>
+          <div className="loader">
+            <span className="loader__text">Loading ...</span>
 
           </div>
         ) : (
           // object를 풀어줄때 map 함수 사용, jsx에서는 props를 통해서 값을 전달한다.
           // key는 표현되지 않지만 필수 props
-          <div class="movies">
+          <div className="movies">
             {movies.map(movie => (
               <Movie
                 key={movie.id}
@@ -43,6 +43,7 @@ class App extends React.Component {
                 title={movie.title}
                 summary={movie.summary}
                 poster={movie.medium_cover_image}
+                genres={movie.genres}
               />
             ))}
           </div>
