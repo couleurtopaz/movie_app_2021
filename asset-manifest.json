@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/%20//couleurtopaz.github.io/movie_app_2021/static/css/main.35740acd.chunk.css",
+    "main.js": "/%20//couleurtopaz.github.io/movie_app_2021/static/js/main.a6902be3.chunk.js",
+    "main.js.map": "/%20//couleurtopaz.github.io/movie_app_2021/static/js/main.a6902be3.chunk.js.map",
+    "runtime-main.js": "/%20//couleurtopaz.github.io/movie_app_2021/static/js/runtime-main.6a561f0d.js",
+    "runtime-main.js.map": "/%20//couleurtopaz.github.io/movie_app_2021/static/js/runtime-main.6a561f0d.js.map",
+    "static/js/2.8fee5983.chunk.js": "/%20//couleurtopaz.github.io/movie_app_2021/static/js/2.8fee5983.chunk.js",
+    "static/js/2.8fee5983.chunk.js.map": "/%20//couleurtopaz.github.io/movie_app_2021/static/js/2.8fee5983.chunk.js.map",
+    "index.html": "/%20//couleurtopaz.github.io/movie_app_2021/index.html",
+    "static/css/main.35740acd.chunk.css.map": "/%20//couleurtopaz.github.io/movie_app_2021/static/css/main.35740acd.chunk.css.map",
+    "static/js/2.8fee5983.chunk.js.LICENSE.txt": "/%20//couleurtopaz.github.io/movie_app_2021/static/js/2.8fee5983.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a561f0d.js",
+    "static/js/2.8fee5983.chunk.js",
+    "static/css/main.35740acd.chunk.css",
+    "static/js/main.a6902be3.chunk.js"
+  ]
+}
