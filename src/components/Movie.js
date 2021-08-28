@@ -1,11 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import "./Movie.css";
 
 // movie라는 component를 생성.
 // props는 아래 propsTypes를 통해 정의 가능
 
 function Movie({ id, year, title, summary, poster, genres }) {
     return (
+        <Link to={{
+            pathname: "/movie-detail",
+            state: {
+                year,
+                title,
+                summary,
+                poster,
+                genres
+            }
+            // 클릭하면 /movie-detail로 가는데 포스터의 모든 props를 보낸다
+        }}>
         <div className="movie">
             <img src={poster} alt={title} title={title} />
             <div className="movie__date">
@@ -19,7 +32,8 @@ function Movie({ id, year, title, summary, poster, genres }) {
                 <p className="movie__summary">{summary.slice(0, 180)}...</p>
 
             </div>
-        </div>
+            </div>
+        </Link>
     );
 }
 
